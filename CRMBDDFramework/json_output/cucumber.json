@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "CRM Login Test Scenario",
+        "description": "",
+        "id": "crm-login-feature;crm-login-test-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6568595500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is already on Login Page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_already_on_Login_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37404600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of login page is Cogmento CRM",
+            "match": {
+              "location": "LoginStepDefinition.title_of_login_page_is_Cogmento_CRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 673500500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and user enters password",
+            "match": {
+              "location": "LoginStepDefinition.user_enters_username_and_user_enters_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 172573400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10142300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_Home_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 305562500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "close the browser",
+            "match": {
+              "location": "LoginStepDefinition.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CRM Login Feature",
+    "description": "",
+    "id": "crm-login-feature",
+    "keyword": "Feature",
+    "uri": "C:/Users/sheri/git/CucumberJVM/CRMBDDFramework/src/main/java/Feature/login.feature"
+  }
+]
