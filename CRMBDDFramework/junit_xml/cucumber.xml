@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="14.598879">
-    <testcase classname="CRM Login Feature" name="CRM Login Test Scenario" time="7.692663">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="24.867838">
+    <testcase classname="CRM Create Contacts" name="CRM create a new contact" time="13.406026">
         <system-out><![CDATA[Given user is already on Login Page.........................................passed
 When title of login page is Cogmento CRM....................................passed
 Then user enters "sherinethachil@gmail.com" and user enters "test@123"......passed
 Then user clicks on login button............................................passed
 Then user is on Home Page...................................................passed
+Then user clicks on Contacts link...........................................passed
+Then user clicks on New button..............................................passed
+Then user is on AddNewContacts Page.........................................passed
+Then user enters "sherine", "thomas" and "QA Engineer"......................passed
+Then user clicks on Save button.............................................passed
 Then close the browser......................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="CRM Login Feature" name="CRM Login Test Scenario 2" time="6.906216">
+    <testcase classname="CRM Create Contacts" name="CRM create a new contact 2" time="11.461812">
         <system-out><![CDATA[Given user is already on Login Page.........................................passed
 When title of login page is Cogmento CRM....................................passed
-Then user enters "merinethachil@gmail.com" and user enters "test@456".......passed
+Then user enters "sherinethachil@gmail.com" and user enters "test@123"......passed
 Then user clicks on login button............................................passed
 Then user is on Home Page...................................................passed
+Then user clicks on Contacts link...........................................passed
+Then user clicks on New button..............................................passed
+Then user is on AddNewContacts Page.........................................passed
+Then user enters "merine", "thomas" and "Manager"...........................passed
+Then user clicks on Save button.............................................passed
 Then close the browser......................................................passed
 ]]></system-out>
     </testcase>

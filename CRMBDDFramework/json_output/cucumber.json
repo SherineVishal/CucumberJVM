@@ -3,19 +3,19 @@
     "line": 1,
     "elements": [
       {
-        "line": 25,
-        "name": "CRM Login Test Scenario",
+        "line": 19,
+        "name": "CRM create a new contact",
         "description": "",
-        "id": "crm-login-feature;crm-login-test-scenario;;2",
+        "id": "crm-create-contacts;crm-create-a-new-contact;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6689663700,
+              "duration": 8684259900,
               "status": "passed"
             },
-            "line": 16,
+            "line": 5,
             "name": "user is already on Login Page",
             "match": {
               "location": "LoginStepDefinition.user_is_already_on_Login_Page()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 13789700,
+              "duration": 13862200,
               "status": "passed"
             },
-            "line": 17,
+            "line": 6,
             "name": "title of login page is Cogmento CRM",
             "match": {
               "location": "LoginStepDefinition.title_of_login_page_is_Cogmento_CRM()"
@@ -36,10 +36,10 @@
           },
           {
             "result": {
-              "duration": 657291400,
+              "duration": 722268900,
               "status": "passed"
             },
-            "line": 18,
+            "line": 7,
             "name": "user enters \"sherinethachil@gmail.com\" and user enters \"test@123\"",
             "match": {
               "arguments": [
@@ -62,10 +62,10 @@
           },
           {
             "result": {
-              "duration": 110625300,
+              "duration": 146242600,
               "status": "passed"
             },
-            "line": 19,
+            "line": 8,
             "name": "user clicks on login button",
             "match": {
               "location": "LoginStepDefinition.user_clicks_on_login_button()"
@@ -74,10 +74,10 @@
           },
           {
             "result": {
-              "duration": 8481100,
+              "duration": 12978900,
               "status": "passed"
             },
-            "line": 20,
+            "line": 9,
             "name": "user is on Home Page",
             "match": {
               "location": "LoginStepDefinition.user_is_on_Home_Page()"
@@ -86,10 +86,89 @@
           },
           {
             "result": {
-              "duration": 212811400,
+              "duration": 1073630900,
               "status": "passed"
             },
-            "line": 21,
+            "line": 10,
+            "name": "user clicks on Contacts link",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_Contacts_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 674580600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on New button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_New_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 439341400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on AddNewContacts Page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_AddNewContacts_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1298218300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters \"sherine\", \"thomas\" and \"QA Engineer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sherine",
+                  "offset": 13
+                },
+                {
+                  "val": "thomas",
+                  "offset": 24
+                },
+                {
+                  "val": "QA Engineer",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_and(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 100620700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on Save button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_Save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 240021400,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "close the browser",
             "match": {
               "location": "LoginStepDefinition.close_the_browser()"
@@ -99,19 +178,19 @@
         ]
       },
       {
-        "line": 26,
-        "name": "CRM Login Test Scenario",
+        "line": 20,
+        "name": "CRM create a new contact",
         "description": "",
-        "id": "crm-login-feature;crm-login-test-scenario;;3",
+        "id": "crm-create-contacts;crm-create-a-new-contact;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6060025400,
+              "duration": 7474481200,
               "status": "passed"
             },
-            "line": 16,
+            "line": 5,
             "name": "user is already on Login Page",
             "match": {
               "location": "LoginStepDefinition.user_is_already_on_Login_Page()"
@@ -120,10 +199,10 @@
           },
           {
             "result": {
-              "duration": 12998900,
+              "duration": 10666300,
               "status": "passed"
             },
-            "line": 17,
+            "line": 6,
             "name": "title of login page is Cogmento CRM",
             "match": {
               "location": "LoginStepDefinition.title_of_login_page_is_Cogmento_CRM()"
@@ -132,20 +211,20 @@
           },
           {
             "result": {
-              "duration": 490677300,
+              "duration": 480891500,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user enters \"merinethachil@gmail.com\" and user enters \"test@456\"",
+            "line": 7,
+            "name": "user enters \"sherinethachil@gmail.com\" and user enters \"test@123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "merinethachil@gmail.com",
+                  "val": "sherinethachil@gmail.com",
                   "offset": 13
                 },
                 {
-                  "val": "test@456",
-                  "offset": 55
+                  "val": "test@123",
+                  "offset": 56
                 }
               ],
               "location": "LoginStepDefinition.user_enters_username_and_user_enters_password(String,String)"
@@ -158,10 +237,10 @@
           },
           {
             "result": {
-              "duration": 115020100,
+              "duration": 129013100,
               "status": "passed"
             },
-            "line": 19,
+            "line": 8,
             "name": "user clicks on login button",
             "match": {
               "location": "LoginStepDefinition.user_clicks_on_login_button()"
@@ -170,10 +249,10 @@
           },
           {
             "result": {
-              "duration": 10207000,
+              "duration": 34997700,
               "status": "passed"
             },
-            "line": 20,
+            "line": 9,
             "name": "user is on Home Page",
             "match": {
               "location": "LoginStepDefinition.user_is_on_Home_Page()"
@@ -182,10 +261,89 @@
           },
           {
             "result": {
-              "duration": 217287600,
+              "duration": 1198108700,
               "status": "passed"
             },
-            "line": 21,
+            "line": 10,
+            "name": "user clicks on Contacts link",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_Contacts_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 518052000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on New button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_New_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 283418300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is on AddNewContacts Page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_AddNewContacts_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1008545900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters \"merine\", \"thomas\" and \"Manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "merine",
+                  "offset": 13
+                },
+                {
+                  "val": "thomas",
+                  "offset": 23
+                },
+                {
+                  "val": "Manager",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStepDefinition.user_enters_and(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 99040000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on Save button",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_on_Save_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 224597600,
+              "status": "passed"
+            },
+            "line": 15,
             "name": "close the browser",
             "match": {
               "location": "LoginStepDefinition.close_the_browser()"
@@ -195,10 +353,10 @@
         ]
       }
     ],
-    "name": "CRM Login Feature",
+    "name": "CRM Create Contacts",
     "description": "",
-    "id": "crm-login-feature",
+    "id": "crm-create-contacts",
     "keyword": "Feature",
-    "uri": "C:/Users/sheri/git/CucumberJVM/CRMBDDFramework/src/main/java/Feature/login.feature"
+    "uri": "C:/Users/sheri/git/CucumberJVM/CRMBDDFramework/src/main/java/Feature/contacts.feature"
   }
 ]

@@ -1,7 +1,11 @@
 package StepDefinitions;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.Given;
@@ -19,6 +23,8 @@ public class LoginStepDefinition {
 		// Write code here that turns the phrase above into concrete actions
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sheri\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://ui.freecrm.com/");
 		
 	}
@@ -54,6 +60,40 @@ public class LoginStepDefinition {
 		System.out.print("Home page title :"+title);
 		Assert.assertEquals("Cogmento CRM", title);	    
 	
+	}
+	
+	@Then("^user clicks on Contacts link$")
+	public void user_clicks_on_Contacts_link() throws Throwable {
+		
+		//Thread.sleep(5000);
+		WebElement element=driver.findElement(By.xpath("//span[text()='Contacts']"));
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();",element);
+	    
+	}
+
+	@Then("^user clicks on New button$")
+	public void user_clicks_on_New_button() throws Throwable {
+		driver.findElement(By.xpath("//button[text()='New']")).click();	    
+	}
+
+	@Then("^user is on AddNewContacts Page$")
+	public void user_is_on_AddNewContacts_Page() throws Throwable {
+		String actualUrl=driver.getCurrentUrl();
+		String expectedUrl="https://ui.freecrm.com/contacts/new";
+		Assert.assertEquals(expectedUrl, actualUrl);
+	}
+
+	@Then("^user enters \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_and(String firstName, String lastName, String position) throws Throwable {
+		driver.findElement(By.xpath("//input[@name='first_name']")).sendKeys(firstName);
+		driver.findElement(By.xpath("//input[@name='last_name']")).sendKeys(lastName);
+		driver.findElement(By.xpath("//input[@name='position']")).sendKeys(position);
+	}
+	
+	@Then("^user clicks on Save button$")
+	public void user_clicks_on_Save_button() throws Throwable {
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
 	}
 	
 	@Then("^close the browser$")
