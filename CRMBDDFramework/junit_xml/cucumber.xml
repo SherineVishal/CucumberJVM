@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.222695">
-    <testcase classname="CRM application testing" name="Login with incorrect username and password" time="0.222625">
-        <system-out><![CDATA[Given This is a invalid login test..........................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.263097">
+    <testcase classname="CRM App test" name="CRM create contact test" time="0.259925">
+        <system-out><![CDATA[Given user is on contacts page..............................................passed
+When user fills the contact form............................................passed
+Then contact is created.....................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="CRM application testing" name="Create a task" time="0.00007">
-        <system-out><![CDATA[Given This is a task testcase...............................................passed
+    <testcase classname="CRM App test" name="CRM create deal test" time="0.001588">
+        <system-out><![CDATA[Given user is on deals page.................................................passed
+When user fills the deals form..............................................passed
+Then deal is created........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="CRM App test" name="CRM create case test" time="0.001584">
+        <system-out><![CDATA[Given user is on case page..................................................passed
+When user fills the case form...............................................passed
+Then case is created........................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

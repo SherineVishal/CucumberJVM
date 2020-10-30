@@ -1,74 +1,252 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 9,
-        "name": "Login with incorrect username and password",
+        "before": [
+          {
+            "result": {
+              "duration": 439300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.setUpFirst()"
+            }
+          },
+          {
+            "result": {
+              "duration": 166200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "CRM create contact test",
         "description": "",
-        "id": "crm-application-testing;login-with-incorrect-username-and-password",
+        "id": "crm-app-test;crm-create-contact-test",
+        "after": [
+          {
+            "result": {
+              "duration": 236599,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 173300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.tearDownFirst()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 222625400,
+              "duration": 258095101,
               "status": "passed"
             },
-            "line": 10,
-            "name": "This is a invalid login test",
+            "line": 6,
+            "name": "user is on contacts page",
             "match": {
-              "location": "TaggingStepDefinition.this_is_a_invalid_login_test()"
+              "location": "TaggedHookStepDefinition.user_is_on_contacts_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 586200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user fills the contact form",
+            "match": {
+              "location": "TaggedHookStepDefinition.user_fills_the_contact_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 228500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "contact is created",
+            "match": {
+              "location": "TaggedHookStepDefinition.contact_is_created()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 8,
-            "name": "@RegressionTest"
+            "line": 3,
+            "name": "@First"
           }
         ]
       },
       {
-        "line": 21,
-        "name": "Create a task",
+        "before": [
+          {
+            "result": {
+              "duration": 676401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "CRM create deal test",
         "description": "",
-        "id": "crm-application-testing;create-a-task",
+        "id": "crm-app-test;crm-create-deal-test",
+        "after": [
+          {
+            "result": {
+              "duration": 281799,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 70100,
+              "duration": 118900,
               "status": "passed"
             },
-            "line": 22,
-            "name": "This is a task testcase",
+            "line": 13,
+            "name": "user is on deals page",
             "match": {
-              "location": "TaggingStepDefinition.this_is_a_task_testcase()"
+              "location": "TaggedHookStepDefinition.user_is_on_deals_page()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 227800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user fills the deals form",
+            "match": {
+              "location": "TaggedHookStepDefinition.user_fills_the_deals_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 283399,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "deal is created",
+            "match": {
+              "location": "TaggedHookStepDefinition.deal_is_created()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
+            "line": 10,
+            "name": "@Second"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 714100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "CRM create case test",
+        "description": "",
+        "id": "crm-app-test;crm-create-case-test",
+        "after": [
+          {
+            "result": {
+              "duration": 219400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggedHookStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 225100,
+              "status": "passed"
+            },
             "line": 20,
-            "name": "@RegressionTest"
+            "name": "user is on case page",
+            "match": {
+              "location": "TaggedHookStepDefinition.user_is_on_case_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user fills the case form",
+            "match": {
+              "location": "TaggedHookStepDefinition.user_fills_the_case_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 185100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "case is created",
+            "match": {
+              "location": "TaggedHookStepDefinition.case_is_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Third"
           }
         ]
       }
     ],
-    "name": "CRM application testing",
+    "name": "CRM App test",
     "description": "",
-    "id": "crm-application-testing",
+    "id": "crm-app-test",
     "keyword": "Feature",
-    "uri": "C:/Users/sheri/git/CucumberJVM/CRMBDDFramework/src/main/java/Feature/tagging.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@FunctionalTest"
-      }
-    ]
+    "uri": "C:/Users/sheri/git/CucumberJVM/CRMBDDFramework/src/main/java/Feature/taggedhooks.feature"
   }
 ]
