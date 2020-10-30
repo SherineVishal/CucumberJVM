@@ -1,191 +1,67 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/sheri/git/CucumberJVM/CRMBDDFramework/src/main/java/Feature/dealsmap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/sheri/git/CucumberJVM/CRMBDDFramework/src/main/java/Feature/tagging.feature");
 formatter.feature({
-  "line": 1,
-  "name": "CRM Deal Data Creation",
+  "line": 2,
+  "name": "CRM application testing",
   "description": "",
-  "id": "crm-deal-data-creation",
-  "keyword": "Feature"
+  "id": "crm-application-testing",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@FunctionalTest"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 3,
-  "name": "CRM create a new deal",
+  "line": 9,
+  "name": "Login with incorrect username and password",
   "description": "",
-  "id": "crm-deal-data-creation;crm-create-a-new-deal",
+  "id": "crm-application-testing;login-with-incorrect-username-and-password",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 8,
+      "name": "@RegressionTest"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
-  "name": "user is already on Login Page",
+  "line": 10,
+  "name": "This is a invalid login test",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 6,
-  "name": "title of login page is Cogmento CRM",
-  "keyword": "When "
+formatter.match({
+  "location": "TaggingStepDefinition.this_is_a_invalid_login_test()"
 });
-formatter.step({
-  "line": 7,
-  "name": "user enters username and user enters password",
-  "rows": [
+formatter.result({
+  "duration": 222625400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 21,
+  "name": "Create a task",
+  "description": "",
+  "id": "crm-application-testing;create-a-task",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 8
-    },
-    {
-      "cells": [
-        "sherinethachil@gmail.com",
-        "test@123"
-      ],
-      "line": 9
+      "line": 20,
+      "name": "@RegressionTest"
     }
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user clicks on login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user is on Home Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "user clicks on Deals link",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "user clicks on New button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "user is on AddNewDeals Page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "user enters deal details",
-  "rows": [
-    {
-      "cells": [
-        "title",
-        "amount",
-        "probability",
-        "commission"
-      ],
-      "line": 17
-    },
-    {
-      "cells": [
-        "test deal1",
-        "1000",
-        "50",
-        "10"
-      ],
-      "line": 18
-    },
-    {
-      "cells": [
-        "test deal2",
-        "2000",
-        "60",
-        "20"
-      ],
-      "line": 19
-    },
-    {
-      "cells": [
-        "test deal3",
-        "3000",
-        "70",
-        "30"
-      ],
-      "line": 20
-    }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
   "line": 22,
-  "name": "close the browser",
-  "keyword": "Then "
+  "name": "This is a task testcase",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealsStepWithMapDefinition.user_is_already_on_Login_Page()"
+  "location": "TaggingStepDefinition.this_is_a_task_testcase()"
 });
 formatter.result({
-  "duration": 8927127200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.title_of_login_page_is_Cogmento_CRM()"
-});
-formatter.result({
-  "duration": 22573900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_enters_username_and_user_enters_password(DataTable)"
-});
-formatter.result({
-  "duration": 538812900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_clicks_on_login_button()"
-});
-formatter.result({
-  "duration": 92991100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_is_on_Home_Page()"
-});
-formatter.result({
-  "duration": 8948100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_clicks_on_Deals_link()"
-});
-formatter.result({
-  "duration": 1268904500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_clicks_on_New_button()"
-});
-formatter.result({
-  "duration": 428396300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_is_on_AddNewDeals_Page()"
-});
-formatter.result({
-  "duration": 62354600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_enters_and(DataTable)"
-});
-formatter.result({
-  "duration": 6513900700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 246300300,
+  "duration": 70100,
   "status": "passed"
 });
 });
