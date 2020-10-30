@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="24.867838">
-    <testcase classname="CRM Create Contacts" name="CRM create a new contact" time="13.406026">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.16594">
+    <testcase classname="CRM Deal Data Creation" name="CRM create a new deal" time="12.16594">
         <system-out><![CDATA[Given user is already on Login Page.........................................passed
 When title of login page is Cogmento CRM....................................passed
-Then user enters "sherinethachil@gmail.com" and user enters "test@123"......passed
+Then user enters username and user enters password..........................passed
 Then user clicks on login button............................................passed
 Then user is on Home Page...................................................passed
-Then user clicks on Contacts link...........................................passed
+Then user clicks on Deals link..............................................passed
 Then user clicks on New button..............................................passed
-Then user is on AddNewContacts Page.........................................passed
-Then user enters "sherine", "thomas" and "QA Engineer"......................passed
-Then user clicks on Save button.............................................passed
-Then close the browser......................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="CRM Create Contacts" name="CRM create a new contact 2" time="11.461812">
-        <system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of login page is Cogmento CRM....................................passed
-Then user enters "sherinethachil@gmail.com" and user enters "test@123"......passed
-Then user clicks on login button............................................passed
-Then user is on Home Page...................................................passed
-Then user clicks on Contacts link...........................................passed
-Then user clicks on New button..............................................passed
-Then user is on AddNewContacts Page.........................................passed
-Then user enters "merine", "thomas" and "Manager"...........................passed
+Then user is on AddNewDeals Page............................................passed
+Then user enters deal details...............................................passed
 Then user clicks on Save button.............................................passed
 Then close the browser......................................................passed
 ]]></system-out>
